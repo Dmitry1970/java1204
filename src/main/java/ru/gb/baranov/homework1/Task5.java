@@ -5,12 +5,13 @@ public class Task5 {
         compareNumbers();
     }
     public static void compareNumbers() {
-        int a = 112;
+        int a = 12;
         int b = 20;
         if (a >= b) {
             System.out.println("a>=b");
         }
-        else
+        else {
             System.out.println("a<b");
+        }
     }
 }

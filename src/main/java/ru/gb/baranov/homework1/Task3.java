@@ -12,8 +12,9 @@ public class Task3 {
 
         if (c >= 0) {
             System.out.println("Сумма положительная");
-        } else
+        } else {
             System.out.println("Сумма отрицательная");
+        }
     }
 
 }
