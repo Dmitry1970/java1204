@@ -3,12 +3,11 @@ package ru.gb.baranov.homework2;
 public class Task1 {
 
     public static void main(String[] args) {
-        int a = 9, b = 5;
-        int s = a + b;
-        System.out.println(amount(s));
+        System.out.println(checkRangeOfSum(18, 3));
     }
 
-    public static boolean amount(int summ) {
-        return summ >= 10 && summ <= 20;
+    public static boolean checkRangeOfSum(int a, int b) {
+        int s = a + b;
+        return s >= 10 && s <= 20;
     }
 }
