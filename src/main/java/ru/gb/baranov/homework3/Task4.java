@@ -1,4 +1,4 @@
-package ru.gb.baranov;
+package ru.gb.baranov.homework3;
 
 public class Task4 {
 
