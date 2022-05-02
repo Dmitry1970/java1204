@@ -9,21 +9,22 @@ public class Employee {
      private int salary;
      private int age;
 
-    public void print() {
-        System.out.println(firstName, lastName, post, email, phoneNumber, salary, age);
-    }
+
 
      public Employee(String firstName, String lastName, String post, String email, String phoneNumber,int salary, int age) {
-         this.firstName= firstName;
-         this.lastName= lastName;
-         this.post = post;
-         this.email = email;
-         this.phoneNumber = phoneNumber;
-         this.salary = salary;
-         this.age = age;
-         setAge(age);
-
-     }
+     this.firstName= firstName;
+     this.lastName= lastName;
+     this.post = post;
+     this.email = email;
+     this.phoneNumber = phoneNumber;
+     this.salary = salary;
+     this.age = age;
+     setAge(age);
+    }
+    public void print() {
+        System.out.println("Ф.И.О - " + firstName + " " + lastName + "\n" + "Должность: " + post + "\n"+ "Почта : " + email + "\n" + "Номер телефона: " + phoneNumber +
+                "\n" + "Зарплата: " + salary + "\n" + "Возраст " + age);
+    }
 
     public String getFirstName() {
         return firstName;
