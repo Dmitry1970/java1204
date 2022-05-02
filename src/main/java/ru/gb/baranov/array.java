@@ -14,10 +14,11 @@ public class array {
 
         for (int i = 0; i < e.length; i++) {
             if (e[i].getAge() > 40) {
-                System.out.println(e[i]);
+                e[i].print();
             }
-        }
 
+        }
+        System.out.println();
     }
 
 }
