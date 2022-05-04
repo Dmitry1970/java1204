@@ -1,15 +1,25 @@
 package ru.gb.baranov.homework6;
 
 public class Animal {
-    private String name;
-    private int run;
-    private int swim;
 
-    public Animal(String name, int run, int swim) {
+    private String name;
+    private int length;
+    private int swimLength;
+    int maxMove;
+    int maxSwim;
+
+
+    public Animal(String name, int length, int swimLength) {
         this.name = name;
-        this.run = run;
-        this.swim = swim;
+        this.length = length;
+        this.swimLength = swimLength;
+        this.maxMove = 0;
+        this.maxSwim = 0;
+        countAnimal++;
+
     }
+
+    public static int countAnimal = 0;
 
     public String getName() {
         return name;
@@ -19,30 +29,24 @@ public class Animal {
         this.name = name;
     }
 
-    public int getRun() {
-        return run;
+    void move() {
+        if (maxMove <= 0) {
+            System.out.println(name + " не умеет бегать");
+        } else if (maxMove >= length) {
+            System.out.println(name + " пробежал " + length + " метров");
+        } else {
+            System.out.println("для " + name + " дистанция слишком большая");
+        }
     }
 
-    public void setRun(int run) {
-        this.run = run;
-
-    }
-
-    public int getSwim() {
-        return swim;
-    }
-
-    public void setSwim(int swim) {
-       this.swim = swim;
-    }
-
-//    public void dog.setSwim (int swim) {
-//        if(swim >= 0 &&  < 250){
-//            this.age = age;
-//        }
-     public void animalInfo() {
-        System.out.println(name + " пробежал " + run + " метров");
-        System.out.println(name + " проплыл " + swim + " метров");
+    void swim() {
+        if (maxSwim <= 0) {
+            System.out.println(name + " не умеет плавать");
+        } else if (maxSwim >= swimLength) {
+            System.out.println(name + " проплыл " + swimLength + " метров");
+        } else {
+            System.out.println("для " + name + " дистанция слишком большая");
+        }
     }
 
 }
